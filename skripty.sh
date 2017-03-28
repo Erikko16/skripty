@@ -3,7 +3,7 @@
 function MainMenu
 {
 selection=
-until [[ "$selection" > "1"] && ["$selection" < "4"]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4"]]; do	
 	clear
 	echo "------Menu------"
 	echo "--1)Convert-----"
@@ -24,7 +24,7 @@ done
 function Custom
 {
 selection=
-until [[ "$selection" > "1"] && ["$selection" < "4"]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4"]]; do	
 	clear
 	echo "----Custom----"
 	echo "--1)Quality---"
@@ -45,7 +45,7 @@ done
 function Effect
 {
 selection=
-until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do	
 	clear
 	echo "----- EFFECTS ------"
 	echo "-- 1) Charcoal -----"
@@ -54,8 +54,8 @@ until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do
 	echo -n ">"
 	read selection
         case $selection in
-                1 ConMenu ;;
-                2 EMenu ;;
+                1 Convert ;;
+                2 Effect ;;
                 3 MainMenu ;;
                 *) echo "Type 1-3"
         esac
@@ -65,7 +65,7 @@ done
 function Convert
 {
 selection=
-until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do	
 	clear
 	echo "----- CONVERT -----"
 	echo "-- 1) png->jpg ----"
@@ -74,8 +74,8 @@ until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do
 	echo -n ">"
 	read selection
         case $selection in
-                1 ConMenu ;;
-                2 EMenu ;;
+                1 Convert ;;
+                2 Effect ;;
                 3 MainMenu ;;
                 *) echo "Type 1-3"
         esac
