@@ -27,7 +27,6 @@ selection=
 until [[ "$selection" > "1"] && ["$selection" < "4"]]; do
 	clear
 	echo "----Custom----"
-	echo "--------------"
 	echo "--1)Quality---"
 	echo "--2)Resultion-"
 	echo "--3)Rotation--"
