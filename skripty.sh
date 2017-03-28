@@ -3,7 +3,7 @@
 function MainMenu
 {
 selection=
-until [[ "$selection" > "0"] && ["$selection" < "4"]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4"]]; do
 	clear
 	echo "------Menu------"
 	echo "--1)Convert-----"
@@ -12,10 +12,10 @@ until [[ "$selection" > "0"] && ["$selection" < "4"]]; do
 	echo "--4)Exit--------"
 	read selection
 	case $selection in
-		1)Convert ;;
-		2)Effect ;;
-		3)Custom ;;
-		4)Exit ;;
+		1 Convert ;;
+		2 Effect ;;
+		3 Custom ;;
+		4 Exit ;;
 		*)echo "Please type 1-4
 	esac
 done
@@ -24,7 +24,7 @@ done
 function Custom
 {
 selection=
-until [[ "$selection" > "0"] && ["$selection" < "4"]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4"]]; do
 	clear
 	echo "----Custom----"
 	echo "--------------"
@@ -35,10 +35,10 @@ until [[ "$selection" > "0"] && ["$selection" < "4"]]; do
 	echo -n ">"
 	read selection
 	case $selection in
-		1)Convert
-		2)Effect
-		3)Custom
-		4)MainMenu
+		1 Convert
+		2 Effect
+		3 Custom
+		4 MainMenu
 		*)echo "Type 1-4
 	esac
 done
@@ -46,7 +46,7 @@ done
 function Effect
 {
 selection=
-until [[ "$selection" > "0"] && ["$selection" < "4" ]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do
 	clear
 	echo "----- EFFECTS ------"
 	echo "-- 1) Charcoal -----"
@@ -55,9 +55,9 @@ until [[ "$selection" > "0"] && ["$selection" < "4" ]]; do
 	echo -n ">"
 	read selection
         case $selection in
-                1) ConMenu ;;
-                2) EMenu ;;
-                3) MainMenu ;;
+                1 ConMenu ;;
+                2 EMenu ;;
+                3 MainMenu ;;
                 *) echo "Type 1-3"
         esac
 done
@@ -66,7 +66,7 @@ done
 function Convert
 {
 selection=
-until [[ "$selection" > "0"] && ["$selection" < "4" ]]; do
+until [[ "$selection" > "1"] && ["$selection" < "4" ]]; do
 	clear
 	echo "----- CONVERT -----"
 	echo "-- 1) png->jpg ----"
@@ -75,9 +75,9 @@ until [[ "$selection" > "0"] && ["$selection" < "4" ]]; do
 	echo -n ">"
 	read selection
         case $selection in
-                1) ConMenu ;;
-                2) EMenu ;;
-                3) MainMenu ;;
+                1 ConMenu ;;
+                2 EMenu ;;
+                3 MainMenu ;;
                 *) echo "Type 1-3"
         esac
 done
